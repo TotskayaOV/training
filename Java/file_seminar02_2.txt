@@ -1,0 +1,1 @@
+[.git, file_seminar02_1.txt, file_seminar02_2.txt, Homework1, lession, lession_homework.java, seminar01.java, seminar02.java]

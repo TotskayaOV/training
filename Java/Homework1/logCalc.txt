@@ -1,0 +1,6 @@
+февр. 18, 2023 12:11:48 PM Homework1.task3 lg_result
+INFO: Результат вычисления: 6/3=2.0
+февр. 18, 2023 9:31:44 PM Homework1.task3 lg_result
+INFO: Результат вычисления: 19-2=17.0
+мар. 02, 2023 12:17:15 PM Homework1.task3 lg_result
+INFO: Результат вычисления: 2\3=0.0
