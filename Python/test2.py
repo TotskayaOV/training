@@ -20,5 +20,5 @@
 # # loader = user_input.split(' ')
 # print(len(user_input))
 
-test = 200%29
+test = 200 % 29
 print(test)
