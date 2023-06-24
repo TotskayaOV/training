@@ -22,6 +22,8 @@ def divide_numbers():
                                "Для выхода в главное меню введите любое число или букву: ")
             if check_stop:
                 go_program = False
+
+                
 def age_check():
     go_program = True
     while go_program:
@@ -40,6 +42,7 @@ def age_check():
             if check_stop:
                 go_program = False
 
+
 def read_file():
     try:
         with open('./numbers.csv', 'r', encoding='UTF-8') as file:
@@ -55,6 +58,7 @@ def read_file():
     else:
         print(f"Сумма цифр в файле: {result}")
 
+
 def main_menu():
     user_choise = input("Введите номер пунтка меню: ")
     match user_choise:
@@ -63,6 +67,7 @@ def main_menu():
         case '3': return 3
         case '4': return 4
         case _: return 0
+
 
 if __name__ == '__main__':
     start_file = True
