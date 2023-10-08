@@ -1,0 +1,9 @@
+pack_animal = ['pack', 'вьючные', 'вьючное']
+pet_animal = ['pet', 'домашние', 'домашнее']
+cats = ['cats', 'cat', 'кошки', 'кошка']
+dogs = ['dogs', 'dog', 'собаки', 'собака']
+hamsters = ['hamsters', 'hamster', 'хомяки', 'хомяк']
+horses = ['horses', 'hors', 'лошади', 'лошадь']
+donkeys = ['donkeys', 'donkey', 'ослы', 'осел']
+camels = ['camels', 'camel', 'верблюды', 'верблюд']
+animals = {'pack': [horses, donkeys, camels], 'pet': [cats, dogs, hamsters]}

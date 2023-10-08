@@ -1,0 +1,14 @@
+{
+    "name": "Portal Clicker",
+    "description": "Click blia",
+    "version": "1.0",
+    "manifest_version": 3,
+    "icons": {
+        "50":"icons/50.png"
+    },
+    "action": {
+	"default_popup":"popup.html"
+    },
+    "permissions": ["scripting", "activeTab"],
+    "background":{}
+}
