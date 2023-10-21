@@ -1,0 +1,19 @@
+h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.title {
+    color: rgb(5, 80, 5);
+    background-color: rgb(255, 235, 205, 0.5);
+}
+
+.img_log {
+    width: 400px;
+    height: 500px;
+}
+.figure-wrapper {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+}
