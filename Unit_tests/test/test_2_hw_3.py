@@ -1,5 +1,5 @@
 import unittest
-from NumberCheck import number_in_interval
+from Unit_tests.NumberCheck import number_in_interval
 
 
 class TestNumberInterval(unittest.TestCase):

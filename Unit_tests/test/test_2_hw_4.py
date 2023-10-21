@@ -1,6 +1,6 @@
 import pytest
 from pytest_mock import MockFixture
-from Book import BookService, Book, BookRepository
+from Unit_tests.Book import BookService, Book, BookRepository
 
 def test_find_book_by_id(mocker: MockFixture):
     # создаем мок-объект BookRepository

@@ -1,5 +1,5 @@
 import pytest
-from Calculator import Calculator, DiscountError, NegativePriceError, NegativeDiscountError
+from Unit_tests.Calculator import Calculator, DiscountError, NegativePriceError, NegativeDiscountError
 
 
 @pytest.fixture()

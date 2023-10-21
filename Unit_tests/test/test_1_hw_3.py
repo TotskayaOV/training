@@ -1,5 +1,5 @@
 import unittest
-from NumberCheck import even_odd_number
+from Unit_tests.NumberCheck import even_odd_number
 
 
 class TestUserNumber(unittest.TestCase):

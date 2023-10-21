@@ -1,4 +1,4 @@
-from Calculator.exception_file import DiscountError, NegativePriceError, NegativeDiscountError
+from Unit_tests.Calculator.exception_file import DiscountError, NegativePriceError, NegativeDiscountError
 
 
 class Calculator:

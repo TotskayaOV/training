@@ -1,6 +1,6 @@
 import unittest
 
-from Vehicle import Car, Motorcycle, Vehicle
+from Unit_tests.Vehicle import Car, Motorcycle, Vehicle
 
 
 class TestVehicle(unittest.TestCase):
