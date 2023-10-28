@@ -94,12 +94,11 @@ def test_update_data_user_list(user_input):
 
 class TestUserInput:
     @pytest.mark.parametrize('user_input, expected_output', [
-        ('1', 'data_input'), # Пример с вводом '1' - ожидаемый результат 'data_input'
+        ('1', 'data_input'),
         ('2', 'equals_list'),
         ('3', 'exit(0)'),
         ('4', 'Введите номер пункта меню в промежутке от 1 до 3'),
-        ('ыаыва', 'Введите номер пункта меню в промежутке от 1 до 3')# Пример с вводом '2' - ожидаемый результат 'equals_list'
-        # Добавьте дополнительные сценарии ввода и ожидаемые результаты, если нужно
+        ('ыаыва', 'Введите номер пункта меню в промежутке от 1 до 3')
     ])
     def test_start_menu(self, user_input, expected_output, monkeypatch):
         user_input = UserInput()
