@@ -65,12 +65,3 @@ class UserInput:
             return self.__first_list == self.__second_list
         elif not isinstance(self.__first_list, NumberList) or not isinstance(self.__second_list, NumberList):
             return 'Для сравнения нужно сначала ввести данные'
-
-
-
-
-if __name__ == '__main__':
-    obj_1 = UserInput()
-    while True:
-        obj_1.start_menu()
-
