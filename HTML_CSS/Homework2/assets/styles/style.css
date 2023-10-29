@@ -35,3 +35,13 @@ text-decoration: none;
     font-size: 36px;
     line-height: 80px;
 }
+
+.input_contacts{
+    width: 200px;
+    height: 30px;
+    outline: none;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 30px;
+}
