@@ -29,21 +29,107 @@ ul{
 }
 .header{
     background: #FFF;
+    display: flex;
+    justify-content: space-between;
+    width: 1170px;
+    margin: 45px auto 0;
 }
+.header_logo{
+    display: flex;
+    gap: 14px;
+}
+
+.header_menu{
+    justify-content: space-between;
+}
+
 .menu{
-    margin-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
     list-style: none;
-    gap: 40px;
+    gap: 20px
 }
+
 .menu_item{
     font-size: 14px;
-    font-family: Gilroy-SemiBold;
     color: #000;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
+}
+
+.header_home_button{
+    border: none;
+    border-radius: 30px;
+    background: #F25822;
+    padding: 12px 27px;
+    color: #FFF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-left: 34px;
+}
+
+.home__page{
+    display: flex;
+    gap: 39px;
+    margin-top: 148px;
+}
+.home_left{
+    justify-content: space-between;
+    margin-left: 373px;
+}
+
+.home_title{
+    color: #000;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+.home_text{
+    color: #888;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 37px;
+}
+.home_video{
+    display: flex;
+}
+
+.home_video_button{
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px rgba(242, 88, 34, 0.20);
+    padding: 15px 36px;
+    color: #FFF;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 27px;
+    border: none;
+}
+.home_video_icon{
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+}
+
+.home_video_text{
+    color: #AAA;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.logo{
+    margin-top: 97px;
+    justify-content: space-between;
 }
