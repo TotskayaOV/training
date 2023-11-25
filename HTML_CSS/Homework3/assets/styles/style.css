@@ -27,18 +27,24 @@ html{
 ul{
     padding: 0;
 }
+.base_container{
+    margin: 0 auto;
+    margin-top: 148px;
+    max-width: 1170px;
+}
 .header{
     background: #FFF;
     display: flex;
     justify-content: space-between;
     width: 1170px;
     margin: 45px auto 0;
+    align-items: center;
 }
 .header_logo{
     display: flex;
     gap: 14px;
+    align-items: center;
 }
-
 .header_menu{
     justify-content: space-between;
 }
@@ -50,7 +56,6 @@ ul{
     list-style: none;
     gap: 20px
 }
-
 .menu_item{
     font-size: 14px;
     color: #000;
@@ -72,17 +77,13 @@ ul{
     line-height: normal;
     margin-left: 34px;
 }
-
 .home__page{
     display: flex;
     gap: 39px;
-    margin-top: 148px;
 }
 .home_left{
     justify-content: space-between;
-    margin-left: 373px;
 }
-
 .home_title{
     color: #000;
     font-size: 60px;
@@ -101,8 +102,9 @@ ul{
 }
 .home_video{
     display: flex;
+    padding-top: 37px;
+    gap: 72px;
 }
-
 .home_video_button{
     border-radius: 50px;
     background: #F25822;
@@ -113,23 +115,65 @@ ul{
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    margin-right: 27px;
     border: none;
+    width: 140px;
+    height: 50px;
 }
-.home_video_icon{
-    width: 30px;
-    height: 30px;
-    flex-shrink: 0;
-}
-
 .home_video_text{
     color: #AAA;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    padding-top: 15px;
 }
+
 .logo{
-    margin-top: 97px;
+    display: flex;
+    width: 1200px;
+    margin: 0 auto;
+    /*padding: 97px 370px;*/
+    padding-top: 97px;
+    padding-bottom: 96px;
     justify-content: space-between;
+}
+
+.box_container{
+    background: #FFF;
+    display: flex;
+    align-items: normal;
+    justify-content: normal;
+
+}
+.container_item{
+    padding-top: 40px;
+    padding-right: 31px;
+    padding-left: 40px;
+    padding-bottom: 31px;
+    background: #FFF;
+    box-shadow: 15px 25px 56px 6px rgba(0, 0, 0, 0.06);
+}
+.container_item_logo{
+    margin-bottom: 25px;
+}
+.container_item_title{
+    color: #000;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 17px;
+}
+.container_item_text{
+    color: #666;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 150%;
+    margin-bottom: 25px;
+}
+.container_item_href{
+    color: #000;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 150%;
+    text-decoration: none;
 }
