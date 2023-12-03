@@ -1,20 +1,20 @@
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-Regular';
     src: url("../fonts/gilroy-regular.ttf");
     font-weight:  400;
 }
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-Medium';
     src: url("../fonts/gilroy-medium.ttf");
     font-weight:  500;
 }
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-SemiBold';
     src: url("../fonts/gilroy-semibold.ttf");
     font-weight:  600;
 }
 @font-face {
-    font-family: 'Gilroy';
+    font-family: 'Gilroy-Bold';
     src: url("../fonts/gilroy-bold.ttf");
     font-weight:  700;
 }
@@ -59,24 +59,13 @@ ul{
 .menu_item{
     font-size: 14px;
     color: #000;
+    font-family: Gilroy-SemiBold;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     text-decoration: none;
 }
 
-.header_home_button{
-    border: none;
-    border-radius: 30px;
-    background: #F25822;
-    padding: 12px 27px;
-    color: #FFF;
-    font-size: 12px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-left: 34px;
-}
 .home__page{
     display: flex;
     gap: 39px;
@@ -87,6 +76,7 @@ ul{
 .home_title{
     color: #000;
     font-size: 60px;
+    font-family: Gilroy-Bold;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -94,6 +84,7 @@ ul{
 }
 .home_text{
     color: #888;
+    font-family: Gilroy-Medium;
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
@@ -122,6 +113,7 @@ ul{
 .home_video_text{
     color: #AAA;
     font-size: 15px;
+    font-family: Gilroy-Bold;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -159,6 +151,7 @@ ul{
 .container_item_title{
     color: #000;
     font-size: 24px;
+    font-family: Gilroy-Bold;
     font-weight: 400;
     line-height: normal;
     margin-bottom: 17px;
@@ -166,6 +159,7 @@ ul{
 .container_item_text{
     color: #666;
     font-size: 15px;
+    font-family: Gilroy-Regular;
     font-weight: 400;
     line-height: 150%;
     margin-bottom: 25px;
@@ -173,7 +167,94 @@ ul{
 .container_item_href{
     color: #000;
     font-size: 11px;
+    font-family: Gilroy-Bold;
     font-weight: 400;
     line-height: 150%;
     text-decoration: none;
+}
+
+.choose_container {
+    padding-top: 92px;
+    padding-bottom: 100px;
+    background: #FAFAFA;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choose_header{
+    text-align: center;
+    max-width: 619px;
+    padding-bottom: 50px;
+}
+.choose_header_title{
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding-bottom: 19px;
+}
+.choose_header_text{
+    color: #666;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.choose_box_items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    justify-items: center;
+}
+.choose_item{
+    justify-content: center;
+}
+.choose_item_img{}
+.choose_item_inner{
+    padding-top: 21px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+.choose_item_inner_title{
+    padding-bottom: 22px;
+    color: #000;
+    font-family: Gilroy-Bold;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.choose_item_inner_text{
+    padding-bottom: 39px;
+    color: #AAA;
+    text-align: center;
+    font-family: Gilroy-Regular;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+}
+.choose_item_inner_button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 50px;
+    border-radius: 50px;
+    background: #F25822;
+    box-shadow: 4px 4px 8px 0px;
+    color: #FFF;
+    text-align: center;
+    font-family: Gilroy-Bold;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 19.5px */
+    border: none;
 }
