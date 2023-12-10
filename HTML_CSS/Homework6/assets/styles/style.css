@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+html {
+    font-family: 'Lato', sans-serif;
+}
+* {
+    margin: 0;
+}
+body {
+    margin: 0;
+}
+ul {
+    padding: 0;
+}
+.header {
+    background-color: #020b1b;
+    display: flex;
+    justify-content: space-around;
+}
+.header_block{
+    display: flex;
+    gap: 42px;
+}
+
+.top_section{
+    background-color: #F1E4E6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header_title{
+    max-width: 405px;
+    max-height: 94px;
+    display: flex;
+    justify-content: space-between;
+}
+.header_title_words{
+
+}
+.header_1word{
+    color: #222;
+    font-family: Lato;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+.header_title_2_part{
+    display: flex;
+    justify-content: space-around;
+}
+.header_2word{
+    color: #222;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.header_3word{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.categories{
+    margin-top: 65px;
+    display: grid;
+    gap: 30px;
+    align-content: center;
+    justify-content: center;
+    padding-left: 230px;
+}
+.categories_item{
+    /*max-width: 360px;*/
+    /*max-height: 260px;*/
+    flex-shrink: 0;
+    fill: rgba(33, 22, 22, 0.70);
+    background: #211616B2 70%; / cover no-repeat;
+    align-items: center;
+}
+.categories_item_big{
+    grid-column: span 3;
+    grid-row: span 3;
+}
+.categories_item_text {
+    max-width: 360px;
+    max-height: 260px;
+    background: #211616B2 70%;
+}
+.categories_item_header2{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.categories_item_header3{
+    color: #FFF;
+    text-align: center;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.items_week{
+    margin-top: 95px;
+    background: #FFF;
+
+}
+.week_header{
+    text-align: center;
+    margin-bottom: 48px;
+}
+.week_header_title{
+    color: #222;
+    font-family: Lato;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.week_header_text{
+    color: #9F9F9F;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.week_container_items{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    max-width: 1600px;
+}
+.week_item{
+    max-width: 360px;
+}
+.week_item_text{
+    display: flex;
+    padding: 24px 16px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 16px;
+    background: #F8F8F8;;
+}
+.name_week_item{
+    color: #000;
+    font-family: Lato;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.description_week_item{
+    color: #5D5D5D;
+    font-family: Lato;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.price_week_item{
+    color: #F16D7F;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.week_buttons{
+    margin-top: 46px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.week_button_item{
+    width: 212px;
+    height: 48px;
+    flex-shrink: 0;
+    color: #F26376;
+    font-family: Lato;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+@media screen and (max-width: 1439px) {
+    .header {
+        justify-content: space-between;
+    }
+    .img-section{
+        max-width: 386px;;
+    }
+    .categories{
+        gap: 19px;
+        padding-left: 16px;
+    }
+    .categories_item {
+        max-width: 232px;
+    }
+    .header_1word{
+        font-size: 44px;
+    }
+    .header_2word{
+        font-size: 24px;
+    }
+    .header_3word{
+        font-size: 24px;
+    }
+    .week_container_items{
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 16px;
+        grid-row-gap: 16px;
+    }
+}
