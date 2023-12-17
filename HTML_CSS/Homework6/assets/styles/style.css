@@ -39,6 +39,7 @@ ul {
     gap: 16px;
 }
 .header_title_words{
+    align-items: center;
 
 }
 .header_1word{
@@ -270,12 +271,16 @@ ul {
         align-items: center;
 }
     .categories_item{
-        width: 344px;
+        max-width: 100%;
     }
     .categories_layer_item_big{
-        width: 344px;
+        max-width: 100%;
     }
     .week_container_items {
         grid-template-columns: 1fr;
+        max-width: 100%;
+    }
+    week_item_img{
+        width: 100%;
     }
 }
