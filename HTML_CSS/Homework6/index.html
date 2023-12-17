@@ -15,9 +15,9 @@
         <img src="assets/images/header_search.svg">
     </div>
     <div class="header_block">
-        <img src="assets/images/header_menu.svg">
-        <img src="assets/images/header_peaple.svg">
-        <img src="assets/images/header_basket.svg">
+        <img src="assets/images/header_menu.svg" class="header_block_rectangle">
+        <img src="assets/images/header_peaple.svg" class="no_mobile">
+        <img src="assets/images/header_basket.svg" class="no_mobile">
     </div>
 </header>
 <section class="top_section">
@@ -57,7 +57,10 @@
         </div>
     </div>
     <div class="categories_item_big" style="position: relative">
-        <img src="assets/images/layer_accesories.png" class="categories_layer_item_big">
+        <picture>
+            <source media="(max-width: 767px)" srcset="assets/images/layer_accesories_mobile.png">
+            <img src="assets/images/layer_accesories.png" class="categories_layer_item_big">
+        </picture>
         <div class="categories_item_text" style="position: absolute; top: 50%; left:50%; transform: translate(-50%, -50%)">
             <h3 class="categories_item_header3">LUXIROUS & TRENDY</h3>
             <h2 class="categories_item_header2">ACCESORIES</h2>
