@@ -7,8 +7,8 @@ html {
     margin: 0;
 }
 body {
-    max-width: 1140px;
     margin: 0 auto;
+    background: #FFF;
 }
 ul {
     padding: 0;
@@ -89,6 +89,14 @@ ul {
     grid-column: span 3;
     grid-row: span 3;
 }
+.img_bg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 22, 22, 0.70);;
+}
 .categories_item_text {
     max-width: 360px;
     max-height: 260px;
@@ -111,9 +119,11 @@ ul {
     font-weight: 400;
     line-height: normal;
 }
-.items_week{
+.week_items{
     margin-top: 95px;
     background: #FFF;
+    display: grid;
+    justify-content: center;
 
 }
 .week_header{
@@ -139,8 +149,7 @@ ul {
 .week_container_items{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
+    gap: 30px;
     align-content: center;
     justify-content: center;
     justify-items: center;
@@ -204,6 +213,8 @@ ul {
 @media screen and (max-width: 1439px) {
     .header {
         justify-content: space-between;
+        padding-left: 32px;
+        padding-right: 32px;
     }
     .img-section{
         max-width: 386px;;
@@ -233,14 +244,15 @@ ul {
     }
     .week_container_items{
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 16px;
-        grid-row-gap: 16px;
+        gap: 16px;
     }
 }
 
 @media screen and (max-width: 767px){
-    .body{
-        max-width: 767px;
+    .header{
+        height: 74px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     .no_mobile{
         display: none;
@@ -250,6 +262,9 @@ ul {
     }
     .img-section{
         display: none;
+    }
+    .header_block{
+        height: 61px;
     }
     .header_block_rectangle {
         width: 12px;
@@ -269,6 +284,8 @@ ul {
         flex-direction: column;
         gap: 32px;
         align-items: center;
+        padding-right: 16px;
+        padding-left: 16px;
 }
     .categories_item{
         max-width: 100%;
@@ -276,11 +293,19 @@ ul {
     .categories_layer_item_big{
         max-width: 100%;
     }
+    .week_header_title{
+        font-size: 30px;
+    }
+    .week_header_text{
+        font-size: 14px;
+    }
     .week_container_items {
         grid-template-columns: 1fr;
         max-width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
     }
-    week_item_img{
+    .week_item_img{
         width: 100%;
     }
 }
