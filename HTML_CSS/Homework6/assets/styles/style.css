@@ -212,7 +212,7 @@ ul {
 
 @media screen and (max-width: 1439px) {
     .header {
-        justify-content: space-between;
+        height: 74px;
         padding-left: 32px;
         padding-right: 32px;
     }
