@@ -17,6 +17,7 @@ ul {
     background-color: #222;
     height: 75px;
     display: flex;
+    align-items: center;
     justify-content: space-around;
 }
 .header_block{
@@ -100,7 +101,6 @@ ul {
 .categories_item_text {
     max-width: 360px;
     max-height: 260px;
-    background: #211616B2 70%;
 }
 .categories_item_header2{
     color: #F16D7F;
@@ -215,6 +215,7 @@ ul {
         height: 74px;
         padding-left: 32px;
         padding-right: 32px;
+        justify-content: space-between;
     }
     .img-section{
         max-width: 386px;;
@@ -253,6 +254,7 @@ ul {
         height: 74px;
         padding-left: 16px;
         padding-right: 16px;
+        justify-content: space-between;
     }
     .no_mobile{
         display: none;
@@ -267,8 +269,12 @@ ul {
         height: 61px;
     }
     .header_block_rectangle {
-        width: 12px;
-        height: 61px;
+        width: 32px;
+        height: 23px;
+    }
+    .header_title{
+        height: 92px;
+        align-items: center;
     }
     .header_1word{
         font-size: 38px;
