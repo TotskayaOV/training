@@ -5,7 +5,7 @@
 # ○ декоратором для многократного запуска.
 # Выберите верный порядок декораторов.
 
-from Homework_9 import restarting_func,check_params,logger_json
+from PythonAdvanced.Homework_9 import restarting_func,check_params,logger_json
 
 
 @restarting_func(2)
