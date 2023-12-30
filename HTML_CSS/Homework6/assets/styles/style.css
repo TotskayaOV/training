@@ -330,6 +330,8 @@ ul {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    background-color: inherit;
+    border: 1px solid #FF6A6A;
 }
 .week_button_item:hover{
     background-color: #F16D7F;
@@ -412,10 +414,9 @@ ul {
 .subscribe_info_left_text{
     max-width: 359px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-.subscribe_info_left_text_normal{
     color: #222224;
     text-align: center;
     font-family: Lato;
@@ -424,14 +425,10 @@ ul {
     font-weight: 400;
     line-height: normal;
 }
-.subscribe_info_left_text_italic {
-    color: #222224;
-    font-family: Lato;
-    font-size: 20px;
+.italic-text {
     font-style: italic;
-    font-weight: 400;
-    line-height: normal;
 }
+
 .subscribe_info_form_title{
     color: #222224;
     text-align: center;
