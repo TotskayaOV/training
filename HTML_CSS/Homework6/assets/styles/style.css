@@ -665,10 +665,7 @@ ul {
     .subscribe_info{
         gap: 59px;
     }
-    .subscribe_info_left_text_normal{
-        font-size: 18px;
-    }
-    .subscribe_info_left_text_italic{
+    .subscribe_info_left_text{
         font-size: 18px;
     }
     .subscribe_info_form_post_title{
