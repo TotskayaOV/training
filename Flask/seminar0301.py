@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from seminar0301_models import db, Students, Faculty
+from seminar0301_models import db, Students, Faculty, Grade
 from random import randint, choice
 from faker import Faker
 
@@ -16,9 +16,11 @@ def base():
 
 @app.route('/users/')
 def users_table():
-    users = Students.query.all()
-    context = {'users': users}
-    return render_template('seminar0301_users.html', **context)
+    students_with_grades = db.session.query(Students, Grade).join(Grade, Students.grade_id).all()
+    result = []
+    for student, grade in students_with_grades:
+        result.append(f"{student.firstname} {student.lastname}, Group: {student.group}, Grade: {grade.grade}")
+    return render_template('seminar0301_users.html', users=result)
 
 
 @app.cli.command("init-db")
@@ -32,7 +34,7 @@ def add_student():
     fuc_list = ['philology', 'psychology', 'physics']
     for elem in fuc_list:
         faculty = Faculty(
-            name = elem
+            name=elem
         )
         db.session.add(faculty)
     db.session.commit()
@@ -53,6 +55,18 @@ def add_student():
         )
         db.session.add(student)
     db.session.commit()
+    name_item_list = ['математика', 'психология', 'русская литература', 'ОБЖ', 'астрономия']
+    for i in range(200):
+        grade_user = randint(1, 5)
+        user_id = randint(1, 30)
+        grade = Grade(
+            name_item=choice(name_item_list),
+            grade =grade_user,
+            students_id=user_id
+        )
+        db.session.add(grade)
+    db.session.commit()
+
 
 
 if __name__ == '__main__':
