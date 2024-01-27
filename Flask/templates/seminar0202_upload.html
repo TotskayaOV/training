@@ -1,0 +1,14 @@
+{% extends 'seminar0203_index.html' %}
+
+{% block ref %}
+
+    <h1>Это страницы загрузки</h1>
+<form action="{{ url_for('upload_post')}}" method="post" enctype="multipart/form-data">
+    <input type="file" name="file">
+    <input type="submit" value="Отправить">
+</form>
+
+    <a href="{{ url_for('base')}}">назад</a>
+
+
+{% endblock %}

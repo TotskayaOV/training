@@ -1,0 +1,12 @@
+{% extends 'seminar0204_index.html' %}
+
+{% block ref %}
+     <h1>Это страницa входа</h1>
+    <form action="{{ url_for('check_text')}}" method="post">
+        <input type="text" name="user_text" placeholder="введите текст">
+        <input type="submit" value="Войти">
+    </form>
+
+    <a href="{{ url_for('base')}}">назад</a>
+
+{% endblock %}

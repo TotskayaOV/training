@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block ref %}
+    <h2>Введите ваше имя и электронную почту:</h2>
+    <form action="/welcome" method="post">
+        <input type="text" name="name" placeholder="Имя"><br>
+        <input type="text" name="age" placeholder="Возраст"><br>
+        <input type="text" name="email" placeholder="Электронная почта"><br>
+        <input type="submit" value="Отправить">
+    </form>
+
+{% endblock %}

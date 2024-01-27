@@ -1,0 +1,11 @@
+{% extends 'index.html' %}
+{% block ref %}
+    <h2>Добро пожаловать, {{ name }}!</h2>
+    <form action="{{ url_for('squaring')}}" method="post">
+        <input type="text" name="user_text" placeholder="введите число">
+        <input type="submit" value="возвести в квадрат">
+    </form>
+
+    <a href="/logout">Выйти</a>
+
+{% endblock %}
