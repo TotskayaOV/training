@@ -1,0 +1,8 @@
+{% extends 'seminar0301_index.html' %}
+{% block ref %}
+    <h1>Это все юзьверы</h1>
+    {% for user in users %}
+        <p> Студент {{user.firstname}} {{user.lastname}} из группы {{user.group}}</p>
+    {% endfor %}
+    <a href="{{ url_for('base')}}">Назад</a>
+{% endblock %}

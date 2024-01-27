@@ -10,4 +10,4 @@ def path_func(in_str: str):
     two_step = first_step[1].split('.')
     return (first_step[0], *two_step)
 
-print(path_func("C:/Users/ASUS/Documents/python/main.py"))
+print(path_func("C:/Users/ASUS/Documents/python/forms.py"))
