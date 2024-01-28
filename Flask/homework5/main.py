@@ -10,10 +10,6 @@ logger = logging.getLogger(__name__)
 task_list = []
 
 
-@app.get("/")
-async def root():
-    return {"message": "Hello world"}
-
 class Task(BaseModel):
     id: int
     title: str
@@ -21,11 +17,15 @@ class Task(BaseModel):
     status: str
 
 
+@app.get("/")
+async def root():
+    return {"message": "Hello world"}
+
+
 @app.get("/task/")
 async def read_tasks():
     logger.info(f'Отработал GET запрос. All tasks')
     return task_list
-
 
 
 @app.get("/task/{task_id}")
@@ -42,6 +42,7 @@ async def create_task(task: Task):
     task_list.append(task)
     logger.info('Отработал POST запрос.')
     return task
+
 
 @app.put("/task/{task_id}")
 async def update_task(task_id: int, task: Task):
@@ -63,7 +64,6 @@ async def delete_task(task_id: int):
             return {"task_id": task_id}
     logger.info(f"Отработал DELETE запрос для item id {task_id}.")
     return {"task_id": task_id, "item": "not found"}
-
 
 
 for i in range(10):
