@@ -173,6 +173,7 @@ async def crate_order(order: OrderIn):
     last_record_id = await database.execute(query)
     return {**order.dict(), 'id': last_record_id}
 
+
 @app.get("/products/{product_id}", response_model=Product)
 async def read_product(product_id: int):
     """
@@ -189,6 +190,7 @@ async def read_user(user_id: int):
     """
     query = users.select().where(users.c.id == user_id)
     return await database.fetch_one(query)
+
 
 @app.get("/orders/{order_id}", response_model=Order)
 async def read_order(order_id: int):
