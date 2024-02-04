@@ -79,7 +79,7 @@ async def read_user(user_id: int):
     return await database.fetch_one(query)
 
 
-@app.put("/users/{user_id", response_model=User)
+@app.put("/users/{user_id}", response_model=User)
 async def update_user(user_id: int, new_user: UserIn):
     query = users.update().where(users.c.id == user_id).values(**new_user.dict())
     await database.execute(query)
