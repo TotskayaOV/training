@@ -29,6 +29,7 @@ if response.status_code == 200:
     Values = data['results']
     for venue in Values:
         print('Название', venue['name'])
+        print("Адрес:", venue["location"]["address"])
         print("Категория:")
         for index, catogory in enumerate(venue["categories"], start=1):
             print(f'{index}. {catogory["short_name"]}')
