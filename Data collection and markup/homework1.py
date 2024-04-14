@@ -43,3 +43,4 @@ while True:
                 print('Вне категорий!')
     else:
         print('Ошибка! Код "банан"!')
+        break
